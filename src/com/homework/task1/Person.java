@@ -41,21 +41,21 @@ public class Person {
 
     private boolean isOldEnough(Person person) throws NotOldEnoughException {
         if (person.getAge() < 18) {
-            throw new NotOldEnoughException("The person is not old enough!");
+            throw new NotOldEnoughException();
         }
         return true;
     }
 
     private boolean isAlreadyMarried(Person person) throws AlreadyMarriedException {
         if (person.getSpouse() != null) {
-            throw new AlreadyMarriedException("Already married!");
+            throw new AlreadyMarriedException();
         }
         return true;
     }
 
     private boolean isDifferentGender(Person lover) throws SameGenderException {
         if (lover.getGender() == this.gender) {
-            throw new SameGenderException("Love is not tolerated!");
+            throw new SameGenderException();
         }
         return true;
     }

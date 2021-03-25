@@ -1,21 +1,23 @@
 package com.homework;
 
-import com.homework.task1.Gender;
-import com.homework.task1.Person;
-import com.homework.task1.exception.AlreadyMarriedException;
-import com.homework.task1.exception.NotOldEnoughException;
-import com.homework.task1.exception.SameGenderException;
+import com.homework.task2.Flower;
+import com.homework.task2.Shoe;
 
 public class Main {
 
-    public static void main(String[] args) throws NotOldEnoughException, AlreadyMarriedException, SameGenderException {
+    public static void main(String[] args) {
 
-        Person boy = new Person(Gender.MALE, 20);
-        Person boy1 = new Person(Gender.MALE, 20);
-        Person girl = new Person(Gender.FEMALE, 16);
-        Person girl1 = new Person(Gender.FEMALE, 213);
-        System.out.println(boy.marry(girl));
+        Shoe adidas = new Shoe("Adidas", 44, 17);
+        Shoe reebok = new Shoe("Reebok", 40.5, 10);
+        Shoe nike = new Shoe("Nike", 38, 0);
+        Flower lily = new Flower("Lily", 8);
+        Flower hyacinth = new Flower("Hyacinth", 1);
 
+        System.out.println(adidas.price());
+        System.out.println(reebok.price());
+        System.out.println(nike.price());
+        System.out.println(lily.price());
+        System.out.println(hyacinth.price());
 
     }
 }
