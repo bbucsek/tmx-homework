@@ -1,4 +1,4 @@
-package com.homework.task1.exception.tests;
+package com.homework.task1.tests;
 
 import com.homework.task1.Gender;
 import com.homework.task1.Person;
